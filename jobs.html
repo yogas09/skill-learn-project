@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs - SkillConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="jobs.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Skill<span>Connect</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="dashboard.html">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        Profile
+                    </a>
+                </li>
+
+                <li>
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="applications.html">
+                        Applications
+                    </a>
+                </li>
+
+            </ul>
+
+            <button
+                class="logout-btn"
+                onclick="logout()">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- JOB PAGE -->
+
+    <main class="jobs-page">
+
+        <div class="page-heading">
+
+            <p class="small-title">
+                PLACEMENT OPPORTUNITIES
+            </p>
+
+            <h1>Find Your Dream Job 💼</h1>
+
+            <p>
+                Explore the latest placement and internship
+                opportunities.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH AND FILTER -->
+
+        <section class="job-filter">
+
+            <div class="search-box">
+
+                🔍
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search job title or company..."
+                >
+
+            </div>
+
+
+            <select id="departmentFilter">
+
+                <option value="all">
+                    All Departments
+                </option>
+
+                <option value="CSE">
+                    CSE
+                </option>
+
+                <option value="IT">
+                    IT
+                </option>
+
+                <option value="ECE">
+                    ECE
+                </option>
+
+                <option value="EEE">
+                    EEE
+                </option>
+
+                <option value="MECH">
+                    MECH
+                </option>
+
+                <option value="CIVIL">
+                    CIVIL
+                </option>
+
+            </select>
+
+
+            <select id="jobTypeFilter">
+
+                <option value="all">
+                    All Types
+                </option>
+
+                <option value="Full Time">
+                    Full Time
+                </option>
+
+                <option value="Internship">
+                    Internship
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- JOB COUNT -->
+
+        <div class="job-result">
+
+            <p>
+                Available Jobs:
+                <strong id="jobCount">0</strong>
+            </p>
+
+        </div>
+
+
+        <!-- JOB LIST -->
+
+        <section
+            id="jobsContainer"
+            class="jobs-container">
+        </section>
+
+
+        <!-- NO RESULT -->
+
+        <div
+            id="noJobs"
+            class="no-jobs">
+
+            <div>🔍</div>
+
+            <h2>No Jobs Found</h2>
+
+            <p>
+                Try changing your search or filters.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="jobs.js"></script>
+
+</body>
+
+</html>

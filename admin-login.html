@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login - SkillConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin-login.css">
+</head>
+
+<body>
+
+    <main class="admin-login-page">
+
+        <div class="admin-login-card">
+
+            <div class="admin-icon">
+                🛡️
+            </div>
+
+            <p class="small-title">
+                SKILLCONNECT
+            </p>
+
+            <h1>
+                Admin Login
+            </h1>
+
+            <p class="login-subtitle">
+                Sign in to manage the placement portal.
+            </p>
+
+
+            <form id="adminLoginForm">
+
+                <div class="form-group">
+
+                    <label>
+                        Admin Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="adminUsername"
+                        placeholder="Enter username"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="adminPassword"
+                        placeholder="Enter password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="admin-login-btn">
+                    Login to Admin Panel
+                </button>
+
+
+                <p
+                    id="loginError"
+                    class="login-error">
+                </p>
+
+            </form>
+
+
+            <div class="demo-details">
+
+                <strong>
+                    Demo Credentials
+                </strong>
+
+                <p>
+                    Username: admin
+                </p>
+
+                <p>
+                    Password: admin123
+                </p>
+
+            </div>
+
+
+            <a
+                href="index.html"
+                class="back-home">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="admin-login.js"></script>
+
+</body>
+
+</html>

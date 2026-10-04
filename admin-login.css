@@ -1,0 +1,224 @@
+/* =====================================
+   ADMIN LOGIN
+===================================== */
+
+.admin-login-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #f8fafc
+        );
+}
+
+
+.admin-login-card {
+    width: 100%;
+
+    max-width: 430px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 50px rgba(15, 23, 42, 0.1);
+}
+
+
+.admin-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    font-size: 32px;
+}
+
+
+.admin-login-card h1 {
+    color: #0f172a;
+
+    font-size: 30px;
+
+    margin: 8px 0;
+}
+
+
+.login-subtitle {
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+
+/* FORM */
+
+.form-group {
+    text-align: left;
+
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #334155;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+.form-group input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* BUTTON */
+
+.admin-login-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    transition: 0.3s;
+}
+
+.admin-login-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* ERROR */
+
+.login-error {
+    color: #dc2626;
+
+    font-size: 13px;
+
+    margin-top: 12px;
+
+    min-height: 18px;
+}
+
+
+/* DEMO */
+
+.demo-details {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    color: #64748b;
+}
+
+.demo-details strong {
+    color: #334155;
+
+    display: block;
+
+    margin-bottom: 7px;
+}
+
+.demo-details p {
+    margin: 3px 0;
+}
+
+
+/* BACK */
+
+.back-home {
+    display: inline-block;
+
+    margin-top: 22px;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+@media (max-width: 500px) {
+
+    .admin-login-card {
+        padding: 30px 20px;
+    }
+
+}

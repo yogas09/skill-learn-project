@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - SkillConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Skill<span>Connect</span>
+            </div>
+
+            <div class="admin-label">
+                🛡️ Admin Panel
+            </div>
+
+            <button
+                class="logout-btn"
+                onclick="adminLogout()">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ADMIN PAGE -->
+
+    <main class="admin-page">
+
+        <div class="admin-heading">
+
+            <div>
+
+                <p class="small-title">
+                    ADMINISTRATION
+                </p>
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+                <p>
+                    Manage students, jobs and placement
+                    applications.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon blue">
+                    👨‍🎓
+                </div>
+
+                <div>
+
+                    <h3 id="studentCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Registered Students
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon purple">
+                    💼
+                </div>
+
+                <div>
+
+                    <h3 id="jobCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Available Jobs
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon orange">
+                    📝
+                </div>
+
+                <div>
+
+                    <h3 id="applicationCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Applications
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon green">
+                    ⏳
+                </div>
+
+                <div>
+
+                    <h3 id="pendingCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Pending Applications
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPLICATION MANAGEMENT -->
+
+        <section class="admin-section">
+
+            <div class="admin-section-heading">
+
+                <div>
+
+                    <p class="small-title">
+                        PLACEMENT MANAGEMENT
+                    </p>
+
+                    <h2>
+                        Student Applications
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Student
+                            </th>
+
+                            <th>
+                                Email
+                            </th>
+
+                            <th>
+                                Job
+                            </th>
+
+                            <th>
+                                Company
+                            </th>
+
+                            <th>
+                                Applied Date
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody
+                        id="applicationsTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div
+                id="noApplications"
+                class="admin-empty">
+
+                📭
+
+                <h3>
+                    No Applications Found
+                </h3>
+
+                <p>
+                    Students have not applied for any jobs yet.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- STUDENT INFORMATION -->
+
+        <section class="admin-section">
+
+            <div class="admin-section-heading">
+
+                <div>
+
+                    <p class="small-title">
+                        STUDENT MANAGEMENT
+                    </p>
+
+                    <h2>
+                        Student Information
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="student-admin-card">
+
+                <div class="student-avatar">
+                    👨‍🎓
+                </div>
+
+                <div class="student-info">
+
+                    <h3 id="studentName">
+                        No Student
+                    </h3>
+
+                    <p id="studentEmail">
+                        -
+                    </p>
+
+                    <p>
+                        Department:
+                        <strong id="studentDepartment">
+                            -
+                        </strong>
+                    </p>
+
+                </div>
+
+                <div class="student-skills">
+
+                    <span>
+                        Skills:
+                        <strong id="studentSkills">
+                            0
+                        </strong>
+                    </span>
+
+                    <span>
+                        Certificates:
+                        <strong id="studentCertificates">
+                            0
+                        </strong>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADMIN INFO -->
+
+        <section class="admin-info-box">
+
+            <div>
+                🔐
+            </div>
+
+            <div>
+
+                <h3>
+                    Admin Access
+                </h3>
+
+                <p>
+                    This is a front-end demo admin panel.
+                    In a real application, admin authentication
+                    and database access should be handled by a
+                    secure backend.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - SkillConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Skill<span>Connect</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+
+                <li>
+                    <a href="jobs.html">Jobs</a>
+                </li>
+
+                <li>
+                    <a href="applications.html">
+                        Applications
+                    </a>
+                </li>
+
+            </ul>
+
+            <button
+                class="logout-btn"
+                onclick="logout()">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Dashboard -->
+
+    <main class="dashboard">
+
+        <!-- Welcome -->
+
+        <section class="welcome-section">
+
+            <div>
+
+                <p class="small-title">
+                    STUDENT DASHBOARD
+                </p>
+
+                <h1>
+                    Welcome, <span id="studentName">Student</span> 👋
+                </h1>
+
+                <p>
+                    Manage your skills, explore jobs and track your
+                    placement applications.
+                </p>
+
+            </div>
+
+            <a
+                href="profile.html"
+                class="edit-profile-btn">
+                Edit Profile
+            </a>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon blue">
+                    👤
+                </div>
+
+                <div>
+                    <h3>Profile</h3>
+
+                    <p>
+                        <span id="profileStatus">
+                            Incomplete
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon purple">
+                    🛠️
+                </div>
+
+                <div>
+                    <h3>Skills</h3>
+
+                    <p>
+                        <span id="skillCount">0</span>
+                        Skills Added
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon green">
+                    📜
+                </div>
+
+                <div>
+                    <h3>Certificates</h3>
+
+                    <p>
+                        <span id="certificateCount">0</span>
+                        Certificates
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon orange">
+                    📝
+                </div>
+
+                <div>
+                    <h3>Applications</h3>
+
+                    <p>
+                        <span id="applicationCount">0</span>
+                        Applied
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="small-title">
+                        QUICK ACTIONS
+                    </p>
+
+                    <h2>
+                        What do you want to do?
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="quick-grid">
+
+                <a
+                    href="profile.html"
+                    class="quick-card">
+
+                    <span>👤</span>
+
+                    <h3>
+                        Complete Profile
+                    </h3>
+
+                    <p>
+                        Add your personal details,
+                        education and skills.
+                    </p>
+
+                    <strong>
+                        Go to Profile →
+                    </strong>
+
+                </a>
+
+
+                <a
+                    href="jobs.html"
+                    class="quick-card">
+
+                    <span>💼</span>
+
+                    <h3>
+                        Find Jobs
+                    </h3>
+
+                    <p>
+                        Explore placement opportunities
+                        matching your skills.
+                    </p>
+
+                    <strong>
+                        View Jobs →
+                    </strong>
+
+                </a>
+
+
+                <a
+                    href="applications.html"
+                    class="quick-card">
+
+                    <span>📊</span>
+
+                    <h3>
+                        Track Applications
+                    </h3>
+
+                    <p>
+                        Check the status of your
+                        job applications.
+                    </p>
+
+                    <strong>
+                        View Applications →
+                    </strong>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Profile Summary -->
+
+        <section class="profile-summary">
+
+            <div class="summary-header">
+
+                <div>
+
+                    <p class="small-title">
+                        MY PROFILE
+                    </p>
+
+                    <h2>
+                        Profile Summary
+                    </h2>
+
+                </div>
+
+                <a href="profile.html">
+                    View Profile →
+                </a>
+
+            </div>
+
+
+            <div class="summary-content">
+
+                <div class="profile-avatar">
+                    👨‍🎓
+                </div>
+
+                <div class="profile-details">
+
+                    <h3 id="summaryName">
+                        Student Name
+                    </h3>
+
+                    <p id="summaryEmail">
+                        student@email.com
+                    </p>
+
+                    <p>
+                        Department:
+                        <strong id="summaryDepartment">
+                            Not Added
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
